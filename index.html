@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Text Redaction App with Statistics</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Redaction App</h1>
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+        <input type="text" id="redactWords" placeholder="Words to redact (comma-separated)">
+        <input type="text" id="replacementWords" placeholder="Replacement words (comma-separated)">
+        <button onclick="redactText()">Redact Text</button>
+        <button onclick="resetText()">Reset</button>
+        <button id="copyButton" onclick="copyText()" disabled>Copy Redacted Text</button>
+        <textarea id="redactedText" placeholder="Redacted Text" readonly></textarea>
+        <div id="statistics"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
